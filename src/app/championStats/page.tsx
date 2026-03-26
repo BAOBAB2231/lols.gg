@@ -49,7 +49,7 @@ export default function ChampionStatsPage() {
     const sorted = json
       .map((entry: ChampionStatsEntry) => ({
         ...entry,
-        imageUrl: `https://ddragon.leagueoflegends.com/cdn/14.8.1/img/champion/${entry.championName}.png`,
+        imageUrl: `https://ddragon.leagueoflegends.com/cdn/15.5.1/img/champion/${entry.championName}.png`,
       }))
       .sort((a: any, b: any) => Number(b.games || 0) - Number(a.games || 0)); // 판수 기준 정렬
 
