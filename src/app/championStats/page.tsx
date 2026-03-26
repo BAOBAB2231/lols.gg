@@ -33,7 +33,7 @@ export default function ChampionStatsPage() {
   const [stats, setStats] = useState<ChampionStatsEntry[]>([]);
   const [playerStats, setPlayerStats] = useState<PlayerStatsEntry[] | null>(null);
   const [position, setPosition] = useState<string>("전체");
-  const [year, setYear] = useState("2025");
+  const [year, setYear] = useState("2026");
   const [selectedChampion, setSelectedChampion] = useState<string | null>(null);
   const [loadingPlayers, setLoadingPlayers] = useState(false);
 
@@ -108,7 +108,7 @@ export default function ChampionStatsPage() {
               onChange={(e) => setYear(e.target.value)}
               className="ml-auto px-2 py-1 bg-black border border-white/20 rounded text-sm"
             >
-              {["2025", "2024", "2023"].map((y) => (
+              {["2026", "2025", "2024", "2023"].map((y) => (
                 <option key={y} value={y}>
                   {y}
                 </option>
