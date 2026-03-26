@@ -14,7 +14,7 @@ export default function ComparePage() {
   const [players, setPlayers] = useState<string[]>([]);
   const [playerA, setPlayerA] = useState("");
   const [playerB, setPlayerB] = useState("");
-  const [year, setYear] = useState("2025");
+  const [year, setYear] = useState("2026");
   const [month, setMonth] = useState("all");
   const [result, setResult] = useState<any>(null);
   const [loading, setLoading] = useState(false);
@@ -86,10 +86,11 @@ export default function ComparePage() {
         <div className="flex flex-wrap justify-center gap-4 mb-4">
           <Select onValueChange={(value) => setYear(value)}>
             <SelectTrigger className="w-[120px] bg-neutral-800 text-white border border-neutral-700 focus:ring-2 focus:ring-blue-400">
-              <SelectValue placeholder="2025" />
+              <SelectValue placeholder="2026" />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="all">전체</SelectItem>
+              <SelectItem value="2026">2026</SelectItem>
               <SelectItem value="2025">2025</SelectItem>
               <SelectItem value="2024">2024</SelectItem>
             </SelectContent>
