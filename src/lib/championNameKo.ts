@@ -169,6 +169,9 @@ const championNameKo: Record<string, string> = {
   Aurora: "오로라",
   Ambessa: "암베사",
   Akshan: "아크샨",
+  Mel: "멜",
+  Yunara: "유나라",
+  Zaahen: "자헨",
 };
 
 export default championNameKo;
