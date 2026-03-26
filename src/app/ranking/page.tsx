@@ -33,7 +33,7 @@ export default function RankingPage() {
   const [selectedTab, setSelectedTab] = useState("승률");
   const [position, setPosition] = useState("전체라인");
   const [month, setMonth] = useState("전체");
-  const [year, setYear] = useState("2025");
+  const [year, setYear] = useState("2026");
 
   return (
     <div className="p-6 max-w-3xl mx-auto">
