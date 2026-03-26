@@ -19,7 +19,7 @@ const cleanMonth = String(Number(currentMonth));
 export default function StatsPage() {
   const [yearData, setYearData] = useState<WinrateEntry[]>([]);
   const [monthData, setMonthData] = useState<WinrateEntry[]>([]);
-  const [selectedYear, setSelectedYear] = useState("2025");
+  const [selectedYear, setSelectedYear] = useState("2026");
   const [selectedMonth, setSelectedMonth] = useState(cleanMonth);
 
   const [yearSortField, setYearSortField] = useState<"games" | "winrate">(
@@ -70,7 +70,7 @@ export default function StatsPage() {
         <div className="bg-white/5 border border-white/10 rounded-xl p-4">
           <h2 className="text-lg font-semibold mb-3">📆 연도별 승률</h2>
           <div className="mb-4 space-x-2">
-            {["2023", "2024", "2025", "전체"].map((year) => (
+            {["2023", "2024", "2025", "2026", "전체"].map((year) => (
               <button
                 key={year}
                 onClick={() => setSelectedYear(year === "전체" ? "" : year)}
