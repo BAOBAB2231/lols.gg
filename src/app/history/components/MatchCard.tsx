@@ -2,7 +2,7 @@
 
 import { normalizeChampionName } from "@/lib/getChampionImgUrl";
 
-const CHAMP_IMG_BASE = "https://ddragon.leagueoflegends.com/cdn/14.6.1/img/champion";
+const CHAMP_IMG_BASE = "https://ddragon.leagueoflegends.com/cdn/16.6.1/img/champion";
 
 export default function MatchCard({ match }: { match: any }) {
   const blueTeam = match.participants.filter((p: any) => p.teamId === "blue");
