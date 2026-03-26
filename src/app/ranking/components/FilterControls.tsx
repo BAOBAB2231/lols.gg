@@ -33,6 +33,10 @@ export default function FilterControls({
         <option className="text-black" key={2025} value={String(2025)}>
           {2025}년
         </option>
+
+        <option className="text-black" key={2026} value={String(2026)}>
+          {2026}년
+        </option>
       </select>
 
       <select
